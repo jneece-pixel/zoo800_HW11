@@ -60,15 +60,15 @@ Anova(birdsong.interaction.mod, type = 3)
 summary(birdsong.interaction.mod)
 
 ## We have a significant interaction! Since the interaction is significant, I'll 
-## leave all the other terms in the model as well (the other terms are also significent
+## leave all the other terms in the model as well (the other terms are also significant
 ## on their own, but even if they weren't I would include them since the interaction
 ## is significant). 
 
 ## The model shows that the effect of ambient noise level of the environment on 
-## an individual bird's song repertoire is dependent on how the individual aquires
+## an individual bird's song repertoire is dependent on how the individual acquires
 ## their songs. When songs are acquired socially, an increase of 1 dB of ambient 
 ## noise level is associated with an average decrease of 0.3 phrases, whereas songs
-## acqurired innately would see a greater average decline of 0.7 phrases with the
+## acquired innately would see a greater average decline of 0.7 phrases with the
 ## same increase of 1 dB. There is also a difference in intercept in the model, 
 ## implying that when there is no ambient noise in the breeding territory, we 
 ## would still expect to see differences between the number of phrases in birds 
