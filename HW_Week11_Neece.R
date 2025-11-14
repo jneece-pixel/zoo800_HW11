@@ -45,7 +45,7 @@ head(birdsong)
 ## Species also differ in how they acquire song: either innately or as a learned 
 ## behavior from conspecifics. Because anthropogenic noise pollution can influence 
 ## bird vocal behavior, it may also influence the evolution and/or expression of 
-## song complexity.
+## song complexity. (0 = innate, 1 = social)
 
 ## Ecological Question: Does the relationship between an individual's repertoire 
 ## size (total number of distinct phrases) and ambient noise level of its 
@@ -64,5 +64,14 @@ summary(birdsong.interaction.mod)
 ## on their own, but even if they weren't I would include them since the interaction
 ## is significant). 
 
-
+## The model shows that the effect of ambient noise level of the environment on 
+## an individual bird's song repertoire is dependent on how the individual aquires
+## their songs. When songs are acquired socially, an increase of 1 dB of ambient 
+## noise level is associated with an average decrease of 0.3 phrases, whereas songs
+## acqurired innately would see a greater average decline of 0.7 phrases with the
+## same increase of 1 dB. There is also a difference in intercept in the model, 
+## implying that when there is no ambient noise in the breeding territory, we 
+## would still expect to see differences between the number of phrases in birds 
+## that acquire their songs socially (~5 phrases) and those who acquire songs 
+## innately (~4.7 phrases on average). 
 
