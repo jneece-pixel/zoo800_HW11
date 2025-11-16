@@ -21,7 +21,8 @@ species <- c(rep(0, 50), rep(1, 50))
 seed.delivery <- -1.5*distance.to.seed.source.m + 9.1*species + error.1 + 
   0.43*distance.to.seed.source.m*species + 22
 
-## Is the interaction between x.num and x.cat significant?
+## Is the interaction between numeric "distance to seed source" and categorical
+## "species" significant?
 mod <- lm(seed.delivery ~ distance.to.seed.source.m + species)
 summary(mod)
 Anova(mod, type = 3)
@@ -75,3 +76,9 @@ summary(birdsong.interaction.mod)
 ## that acquire their songs socially (~5 phrases) and those who acquire songs 
 ## innately (~4.7 phrases on average). 
 
+## Objective 2, part D ##
+
+## After checking-in with Rebekkah about the model she fit, her beta estimates
+## were very similar to the true values that I used to generate the simulated data. 
+## All of her parameter estimates were within 1 unit of the true value, and she
+## recognized the signigicant interaction in her model.
